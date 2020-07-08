@@ -16,6 +16,7 @@
 		3E435BDD24B5AE7A000ABA91 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E435BDC24B5AE7A000ABA91 /* TableViewController.swift */; };
 		3E435BE024B5BB24000ABA91 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E435BDE24B5BB24000ABA91 /* TableViewCell.swift */; };
 		3E435BE124B5BB24000ABA91 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E435BDF24B5BB24000ABA91 /* TableViewCell.xib */; };
+		3E435BE324B5D0E2000ABA91 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E435BE224B5D0E2000ABA91 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3E435BDC24B5AE7A000ABA91 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		3E435BDE24B5BB24000ABA91 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3E435BDF24B5BB24000ABA91 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3E435BE224B5D0E2000ABA91 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +68,11 @@
 				3E435BCA24B5AB6C000ABA91 /* SceneDelegate.swift */,
 				3E435BCC24B5AB6C000ABA91 /* ViewController.swift */,
 				3E435BCE24B5AB6C000ABA91 /* Main.storyboard */,
-				3E435BDC24B5AE7A000ABA91 /* TableViewController.swift */,
 				3E435BD124B5AB6E000ABA91 /* Assets.xcassets */,
+				3E435BE224B5D0E2000ABA91 /* DetailViewController.swift */,
 				3E435BD324B5AB6E000ABA91 /* LaunchScreen.storyboard */,
 				3E435BD624B5AB6E000ABA91 /* Info.plist */,
+				3E435BDC24B5AE7A000ABA91 /* TableViewController.swift */,
 				3E435BDE24B5BB24000ABA91 /* TableViewCell.swift */,
 				3E435BDF24B5BB24000ABA91 /* TableViewCell.xib */,
 			);
@@ -151,6 +154,7 @@
 				3E435BE024B5BB24000ABA91 /* TableViewCell.swift in Sources */,
 				3E435BCD24B5AB6C000ABA91 /* ViewController.swift in Sources */,
 				3E435BC924B5AB6C000ABA91 /* AppDelegate.swift in Sources */,
+				3E435BE324B5D0E2000ABA91 /* DetailViewController.swift in Sources */,
 				3E435BCB24B5AB6C000ABA91 /* SceneDelegate.swift in Sources */,
 				3E435BDD24B5AE7A000ABA91 /* TableViewController.swift in Sources */,
 			);

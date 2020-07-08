@@ -8,22 +8,37 @@
 
 import UIKit
 
+let dataLabel = [
+    "Data 1",
+    "Data 2",
+    "Data 3",
+    "Data 4",
+    "Data 5",
+    "Data 6",
+    "Data 7",
+    "Data 8",
+    "Data 9",
+    "Data 10"
+]
+
+let dataImage = [
+    "android",
+    "backend",
+    "frontend",
+    "network",
+    "security",
+    "utility",
+    "android",
+    "backend",
+    "network",
+    "security"
+]
+
+var indexData = 0
+
 class TableViewController: UIViewController {
     
     @IBOutlet var tableview: UITableView!
-    
-    let dataLabel = [
-        "Data 1",
-        "Data 2",
-        "Data 3",
-        "Data 4",
-        "Data 5",
-        "Data 6",
-        "Data 7",
-        "Data 8",
-        "Data 9",
-        "Data 10"
-    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +54,10 @@ class TableViewController: UIViewController {
 
 extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        print("Selected ")
-//        print("Selected " + data[indexPath.r  ow])
+//        print("Selecte ")
+        indexData = indexPath.row
+        print("Selected " + dataLabel[indexPath.row])
+        performSegue(withIdentifier: "toDetail", sender: self)
     }
 }
 
@@ -53,9 +70,7 @@ extension TableViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
         cell.myTextLabel?.text = dataLabel[indexPath.row]
-        cell.myImageView.backgroundColor = .red
-        
-//        cell.textLabel?.text = dataLabel[indexPath.row]
+        cell.myImageView.image = UIImage(named: dataImage[indexPath.row])
         
         return cell
     }
